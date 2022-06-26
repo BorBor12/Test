@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>
+        TESTTelsim
+    </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>deneme</title>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('img_girl.jpg');
+        }
+        </style>
+
+    <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Tarihi gör.</button>
+
+<p id="demo"></p>
+    <main>
+        <label>isim:</label>
+        <input type="text" id="name-input">
+        <button id="add-name-btn">isim ekle:</button>
+
+        <br><br>
+        <div>
+           <input placeholder="isim gir" id="search-input">
+           <button id="search-btn">Ara</button>
+        </div>
+
+        <table id="table">
+            <thead>
+                <th>kimlik</th>
+                <th>İsim</th>
+                <th>Eklendiği gün</th>
+                <th>Sil</th>
+                <th>Düzenle</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section hidden id="update-row">
+            <label>Name:</label>
+            <input type="text" id="update-name-input">
+            <button id="update-row-btn">Update</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
